@@ -62,7 +62,7 @@ while iniciar_trivia == True:
 
 
 #Pregunta 2
-  print ("2) ¿Cómo se les dice a los conejitos bebé?")
+  print ("\n2) ¿Cómo se les dice a los conejitos bebé?")
   print ("a) gazapo")
   print ("b) cachorro")
   print ("c) bebé, duh")
@@ -93,11 +93,13 @@ while iniciar_trivia == True:
   else:
     puntaje -= 10
     print("¡Uy! Respuesta incorrecta. Así se le dice a los pollitos.")
+    print("Tu puntaje actual es:", puntaje)
+
 
   time.sleep(2)
   
 #Pregunta 3
-  print ("3) ¿Cuál es la mejor forma de cargar a un conejito?")
+  print ("\n3) ¿Cuál es la mejor forma de cargar a un conejito?")
   print ("a) de las orejas")
   print ("b) sujetándolo del cuello, como un gato")
   print ("c) cargándolo como una pelota de fútbol americano")
@@ -128,7 +130,7 @@ while iniciar_trivia == True:
 
   
 #Pregunta 4
-  print ("4) Se " + MAGENTA + "recomienda " +  RESET + "tener la siguiente cantidad de conejitos:")
+  print ("\n4) Se " + MAGENTA + "recomienda " +  RESET + "tener la siguiente cantidad de conejitos:")
   print ("a) Solo 1")
   print ("b) En pares")
   print ("c) Tres o más")
@@ -149,7 +151,7 @@ while iniciar_trivia == True:
 
     
 #Pregunta 5
-  print ("5) La traducción formal de 'conejo' en inglés es:")
+  print ("\n5) La traducción formal de 'conejo' en inglés es:")
   print ("a) " +  GREEN + "bun" + RESET)
   print ("b) " + RED + "bunny" + RESET)
   print ("c) " + MAGENTA + "rabbit" + RESET)
@@ -174,7 +176,7 @@ while iniciar_trivia == True:
     print("Tu puntaje actual es:", puntaje)
 
   time.sleep(2)
-  print("Calculando resultados...")
+  print("\nCalculando resultados...")
   for numero_carga in range(random.randint(0, 9), 0, -1):
     print(numero_carga)
     time.sleep(1)
@@ -183,8 +185,8 @@ while iniciar_trivia == True:
 
 
 #Final
-  print("Gracias,", nombre, ",por jugar, alcanzaste", puntaje, "puntos." )
-  print("¿Deseas jugar nuevamente?")
+  print("\nGracias,", nombre, ",por jugar, alcanzaste", puntaje, "puntos." )
+  print("\n¿Deseas jugar nuevamente?")
   repetir_trivia = input("Escribe 'si' para repetir o presiona cualquier letra para finalizar: ").lower()
   if repetir_trivia != "si":
     print("Ok,", nombre, ",espero que te hayas divertido.")
